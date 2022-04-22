@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Box from './components/Box/Box';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <NavBar/>
+      <Box/>
+      <ItemListContainer texto= 'producto1' color='red'/>
+      <ItemListContainer texto= 'producto2' color='yellow'/>
+      <ItemListContainer texto= 'producto3' color='brown'/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
